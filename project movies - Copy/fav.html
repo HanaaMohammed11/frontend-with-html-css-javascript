@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+    <style>
+        
+
+        .card {
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+            width: 300px;
+            margin: auto;
+            text-align: center;
+            font-family: arial;
+            padding-bottom: 5px;
+        }
+
+        .rating {
+            color: grey;
+            font-size: 22px;
+        }
+
+        .card button {
+            border-radius: 45px;
+            outline: 0;
+            padding: 12px;
+            color: white;
+            background-color: #000;
+            text-align: center;
+            cursor: pointer;
+            height: 50px;;
+           width: 70%; 
+            font-size: 18px;
+        }
+
+        .card button:hover {
+            opacity: 0.7;
+        }
+
+        #movi {
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+        }
+      
+
+    </style>
+</head>
+<body onload="get()">
+    <div class="tite"><h1>favorites</h1></div>
+    <div id="_favmovie" onclick="draw(_favmovie) "></div>
+    <script src="movies.js"></script>
+</body>
+
+</html>
